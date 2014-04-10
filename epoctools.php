@@ -3,7 +3,7 @@
 * Various time related functions
 * @author Matt Carter <m@ttcarter.com>
 */
-class Time {
+class Epoc {
 	/**
 	* Returns the number of seconds from a human readable string such as '1h30m' => (60*60)+(30*60)
 	* @param string $haystack The string to search usually in the example form '1h30m'
@@ -229,20 +229,20 @@ class Time {
 	* @param int $minute The minute of the day to use instead of '0'
 	* @param int $second The second of the day to use instead of '0'
 	* @return int The epoc representing midnight (or an offset of) for the given epoc
-	* @see EpocDateEnd()
+	* @see DateEnd()
 	*/
-	function EpocDate($epoc = 0, $hour = 0, $minute = 0, $second = 0) {
+	function Date($epoc = 0, $hour = 0, $minute = 0, $second = 0) {
 		$day = getdate( ($epoc == 0) ? time() : $epoc);
 		return mktime($hour,$minute,$second,$day['mon'],$day['mday'],$day['year']);
 	}
 
 	/**
-	* Simular to EpocDate but returns the very LAST second of the day instead
+	* Simular to Date but returns the very LAST second of the day instead
 	* @param int $epoc The epoc of the day to return the end-of-day epoc for
 	* @return int The epoc representing the last second of the day
-	* @see EpocDate()
+	* @see Date()
 	*/
-	function EpocDateEnd($epoc = 0) {
+	function DateEnd($epoc = 0) {
 		$day = getdate( ($epoc == 0) ? time() : $epoc);
 		return mktime(23,59,59,$day['mon'],$day['mday'],$day['year']);
 	}

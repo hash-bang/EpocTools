@@ -1,8 +1,8 @@
 {
-	"name": "hashbang/time",
+	"name": "hashbang/epoctools",
 	"description": "Library to provide various time functions",
 	"keywords": ["time"],
-	"homepage": "https://github.com/hash-bang/Time",
+	"homepage": "https://github.com/hash-bang/EpocTools",
 	"type": "library",
 	"license": "MIT",
 	"authors": [
@@ -22,6 +22,6 @@
 	"config": {
 	},
 	"autoload": {
-		"files": ["lib/time.php"]
+		"files": ["epoctools.php"]
 	}
 }
