@@ -1,6 +1,6 @@
 {
 	"name": "hashbang/epoctools",
-	"description": "Library to provide various time functions",
+	"description": "Library to provide various epoc handling functions",
 	"keywords": ["time"],
 	"homepage": "https://github.com/hash-bang/EpocTools",
 	"type": "library",
