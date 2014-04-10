@@ -3,7 +3,7 @@
 * Various time related functions
 * @author Matt Carter <m@ttcarter.com>
 */
-class Epoc {
+class EpocTools {
 	/**
 	* Returns the number of seconds from a human readable string such as '1h30m' => (60*60)+(30*60)
 	* @param string $haystack The string to search usually in the example form '1h30m'
