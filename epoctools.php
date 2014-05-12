@@ -90,7 +90,7 @@ class EpocTools {
 	* @return string Human readable string calculating the items age
 	* @see Humanize()
 	*/
-	function Age($epoc, $today, $interest = 2, $zerotime = FALSE) {
+	function Age($epoc, $today = NULL, $interest = 2, $zerotime = FALSE) {
 		if (!$today)
 			$today = time();
 		$age = $today - $epoc;
