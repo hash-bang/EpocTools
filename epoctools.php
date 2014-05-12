@@ -91,6 +91,8 @@ class EpocTools {
 	* @see Humanize()
 	*/
 	function Age($epoc, $today, $interest = 2, $zerotime = FALSE) {
+		if (!$today)
+			$today = time();
 		$age = $today - $epoc;
 		if ($age < 0)
 			return $zerotime;
